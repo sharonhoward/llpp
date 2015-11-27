@@ -287,4 +287,4 @@ Future plans
 * TEI-XML files, incorporating some subset of the London Lives structural and semantic markup.
 * A web search at earlymodernweb.org, linking directly to the documents on the London Lives website.
 
-
+[![DOI](https://zenodo.org/badge/8207/sharonhoward/llpp.svg)](https://zenodo.org/badge/latestdoi/8207/sharonhoward/llpp)
