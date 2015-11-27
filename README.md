@@ -193,11 +193,11 @@ Data summary
 Please read the *methods and caveats* section carefully before using the data! 
 
 
-### Text files
+### Texts
 
-**10130 plain text files**: one .txt file per petition, organised into subfolders by court. 
+**10130 plain text files**: one .txt file for each petition, in subfolders organised by court. (13.5mb)
 
-Filenames: the name of each file corresponds to the image reference on London Lives and to the ll_img field in each of the metadata tables.
+File naming: the name of each file corresponds to the image reference on London Lives and to the ll_img field in each of the metadata tables.
 
 The text files are intended primarily to enable textmining (bearing in mind all the problems already discussed) or import into a database for advanced searching. 
 
@@ -209,7 +209,9 @@ XML markup has been removed for this version of the files, but certain markup el
 -   deleted text (between \<deleted\> tags) has been replaced with [---]
 -   the \<mark\> tag, denoting that someone signed a document with a mark, has been replaced with [x] 
 
-### Metadata tables
+### Metadata
+
+The data tables are supplied in .csv format.
 
 #### LL_petitions_v1_data
 
@@ -222,15 +224,14 @@ Contains summary information for each petition, including tags and data to enabl
 | ll_url | London Lives URL for the (first) page |
 | mpage | 0 = a single page petition; 1 = multiple pages |
 | mpimgs | list of all image references for multiple page petitions |
-| tags | list of tags |
+| tags | list of tags for the petition |
 | court | two letter court code |
 | year | year of session |
-| tags | list of tags for the petition |
 
 
 #### LL_petitions_v1_tags
 
-This file provides the tags data separately for use in a relational database. 
+This file provides the tags data separately for use in a database. 
 
 | field | description |
 |------|------------------|
@@ -262,7 +263,7 @@ The London Lives project (under the name Plebeian Lives) was funded by the Econo
 License
 ---------
 
-The dataset and this documentation are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+The dataset and all accompanying documentation are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 This means that you are free to copy and redistribute the material in any medium or format; and to remix, transform, and build upon the material for any purpose, even commercially, providing you follow the terms of the licence:
 
