@@ -1,3 +1,23 @@
+Contents
+---------
+
+-   Description
+-   Background
+-   The petitions
+-   Methods and caveats
+    -   Essential background reading:
+    -   The source data
+    -   Data collection
+    -   Issues and limitations
+    -   Keyword tagging
+    -   Considerations for further analysis
+-   Data summary
+    -   Text files
+    -   Metadata tables
+-   Acknowledgments
+-   License
+-   Citation
+-   Future plans
 
 Description
 ----------------
@@ -35,7 +55,7 @@ Petitions are ubiquitous in early modern legal archives across England
 and Wales and they are rich and important sources that many social
 historians have used extensively. As physical objects, they range from high-quality professional products to scrawled scraps of paper, reflecting the diversity of petitioners. The language of petitions is
 deferential, and often highly formulaic; it can also be florid,
-melodramatic, poignant and distressing. Petitions are not by any means straightforward, authentic
+melodramatic, poignant, distressing, and manipulative. Petitions are not by any means straightforward, authentic
 '[voices of the
 people](https://manyheadedmonster.wordpress.com/2015/07/29/petitions-of-the-people/)', but they can provide insights into plebeian experience, as well as being rich source material for local government and poor relief administration. 
 
@@ -88,7 +108,7 @@ The main strategy for identifying likely petitions was based on
 searching for certain keywords and phrases. In particular:
 
 1.  The preamble: "To The Right Honourable/Worshipful/similar title..."
-2.  Less formal begging letters often begin with phrases like 'May it please you/your honour'
+2.  Less formal letters often begin with phrases like 'May it please you/your honour'
 3.  At the beginning of the document or immediately following the preamble: "The humble petition/prayer of..."
 4.  In the body of the document: "your (humble) petitioner(s)" (also "humbly sheweth")
 5.  The sign off: "And your petitioner(s) (as in duty bound) shall ever pray etc"
@@ -103,9 +123,7 @@ reality the forms of the words in the data files can vary considerably, making t
 3.  rekeying errors 
 
 This necessitated the use of some complex [regular expressions](http://www.regular-expressions.info/) searches. For
-example, a search query for 'The humble petition of' might in fact look more like
-
-* **(th|y)e.? humb(le|ell?) peti(t|c)i?on of**
+example, a search query for 'The humble petition of' would in fact look like `(th|y)e.? humb(le|ell?) peti(t|c)i?on of`
 
 
 ### Issues and limitations
@@ -122,7 +140,7 @@ phrases. It is most effective for finding
 professionally-produced petitions that adhere closely to the formal conventions
 of petitioning language and use consistent spelling. Non-professional petitions from individuals of lower social status are more likely to 
 
-- depart to some extent from those structural forms
+- depart to some extent from those forms
 - use unpredictable and inconsistent spelling
 - have less well-formed handwriting (which in turn made them harder to rekey accurately) 
 
@@ -141,12 +159,12 @@ I would emphasise that the tagging is **not** reliable enough to use in any stat
 I felt that *some* kind of tagging would be better than nothing, but future updates can be expected to improve significantly on this aspect of the data.
 
 
-### Considerations for further analysis and textmining
+### Considerations for further analysis
 
 All of the issues described need to be taken into account for anyone trying to use the data. I have created a 'corpus' of plain text files but I do not yet know exactly what it will be possible to do with them, given the two compounding factors of transcription errors and spelling variations in the original documents. Corpus linguistic approaches to early modern *printed* texts - which are considerably more standardised than these non-elite manuscript sources - have to work hard to deal with [their orthographic variations](http://www.linguisticdna.org/2015/07/10/eebo-tcp-and-standard-spelling/). The petitions texts might be more comparable to OCRed printed texts (such as ECCO) than to the rekeyed EEBO-TCP corpus.
 
 
-To give one brief example: the top 10 variants from a search of the Middlesex Sessions petitions texts for the word "relief", using the regex **rel[ie]+f**:
+To give one brief example: the top 10 variants from a search of the Middlesex Sessions petitions texts for the word "relief", using the regex `rel[ie]+f`:
 
 | word | count | 
 |-------|--------|
@@ -254,7 +272,7 @@ Citation
 
 Suggested citation:
 
-Sharon Howard, The London Lives Petitions Project, version 1.0 (2015), based on data from *London Lives, 1690-1800 www.londonlives.org*
+Sharon Howard, The London Lives Petitions Project, version 1.0 (2015), based on data from *www.londonlives.org*.
 
 
 Future plans
