@@ -1,0 +1,439 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>The London Lives Petitions Project by sharonhoward</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>The London Lives Petitions Project</h1>
+        <p>A dataset of eighteenth-century petitions to London magistrates</p>
+
+        <p class="view"><a href="https://github.com/sharonhoward/llpp">View the Project on GitHub <small>sharonhoward/llpp</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/sharonhoward/llpp/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/sharonhoward/llpp/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/sharonhoward/llpp">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="the-london-lives-petitions-project" class="anchor" href="#the-london-lives-petitions-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>The London Lives Petitions Project</h1>
+
+<h2>
+<a id="contents" class="anchor" href="#contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contents</h2>
+
+<ul>
+<li>  Description</li>
+<li>  Background</li>
+<li>  The petitions</li>
+<li>  Methods and caveats
+
+<ul>
+<li>  Essential background reading:</li>
+<li>  The source data</li>
+<li>  Data collection</li>
+<li>  Issues and limitations</li>
+<li>  Keyword tagging</li>
+<li>  Considerations for further analysis</li>
+</ul>
+</li>
+<li>  Data summary
+
+<ul>
+<li>  Text files</li>
+<li>  Metadata tables</li>
+</ul>
+</li>
+<li>  Acknowledgments</li>
+<li>  License</li>
+<li>  Citation</li>
+<li>  Future plans</li>
+</ul>
+
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h2>
+
+<p>Textual data and documentation relating to approximately 10,000 eighteenth-century petitions addressed to London magistrates, originally digitised as part of <a href="http://www.londonlives.org">London Lives</a>.</p>
+
+<h2>
+<a id="background" class="anchor" href="#background" aria-hidden="true"><span class="octicon octicon-link"></span></a>Background</h2>
+
+<p><a href="http://www.londonlives.org">London Lives 1690-1800: Crime, Poverty and Social Policy in the
+Metropolis</a> is an online resource
+providing 'a wide range of primary sources about eighteenth-century
+London, with a particular focus on plebeian Londoners'. It contains more
+than 240,000 manuscript and printed pages from eight London archives,
+including records from four of London's main courts: the Sessions of the
+Peace for Middlesex, Westminster and City of London, and the Old Bailey.</p>
+
+<p>In the eighteenth century, magistrates were responsible for a wide range of
+administrative duties in addition to criminal justice, including the
+administration of poor relief and the settlement laws, economic regulation (including for example, wages, alehouses and fairs), the maintenance of highways, and much local government besides. <a href="http://www.londonlives.org/static/PS.jsp">Sessions
+Papers</a> are products of this work, bundles of assorted documents which clerks of
+the peace would file together after each court session.</p>
+
+<p>There are nearly 100,000 pages of material in 1300 session files in London Lives' four series of session papers. Not only are they the largest single body of manuscript material in London Lives, they are also by far the most diverse. They include
+many types of document, but probably the most important and numerous
+are: witness examinations and depositions; lists of those appearing
+before the court; court orders; and petitions.</p>
+
+<h2>
+<a id="the-petitions" class="anchor" href="#the-petitions" aria-hidden="true"><span class="octicon octicon-link"></span></a>The petitions</h2>
+
+<p>Petitions are ubiquitous in early modern legal archives across England
+and Wales and they are rich and important sources that many social
+historians have used extensively. As physical objects, they range from high-quality professional products to scrawled scraps of paper, reflecting the diversity of petitioners. The language of petitions is
+deferential, and often highly formulaic; it can also be florid,
+melodramatic, poignant, distressing, and manipulative. Petitions are not by any means straightforward, authentic
+'<a href="https://manyheadedmonster.wordpress.com/2015/07/29/petitions-of-the-people/">voices of the
+people</a>', but they can provide insights into plebeian experience, as well as being rich source material for local government and poor relief administration. </p>
+
+<p>The petition was a standard method of
+communication with early modern representatives of authority. Petitions were instigated by institutions and by individuals, by elites
+and by paupers, and all sorts of people in between. They were
+used by convicted criminals to beg for the royal pardon; by officials and contractors to
+claim expenses for government work; by private individuals to complain about
+abusive behaviour by neighbours, employers, apprentices, husbands or
+local officials; by parishes to appeal official decisions about paupers and
+vagrants; to claim exemptions from local office or taxes; and more.  Individuals also wrote less formal letters to officials similarly requesting some kind of relief, aid or mitigation, and this project attempts to gather those documents as well as 'proper' petitions, for a fuller picture of the culture and practices of petitioning. (Additionally, there are related documents for many petitions, particularly court orders, which I have not attempted to document at this stage.)</p>
+
+<p>The London Lives Sessions Papers contain at least 10,000 petitions and petitioning letters addressed to London magistrates (and a few to the judges of the Old Bailey). The sheer scale and heterogeneity of the Sessions
+Papers, especially the Middlesex Sessions, and the organisation (or lack of it) of the
+material in London Lives means that they have not been easily accessible
+as a body of texts for in-depth and systematic investigation of their
+language and their creators. I have begun the London Lives Petitions Project as an attempt to remedy this.</p>
+
+<h2>
+<a id="methods-and-caveats" class="anchor" href="#methods-and-caveats" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methods and caveats</h2>
+
+<h3>
+<a id="essential-background-reading" class="anchor" href="#essential-background-reading" aria-hidden="true"><span class="octicon octicon-link"></span></a>Essential background reading:</h3>
+
+<ul>
+<li><a href="http://www.londonlives.org/static/Project.jsp#toc7">London Lives technical methods</a></li>
+<li><a href="http://www.londonlives.org/static/PS.jsp">Sessions Papers</a></li>
+</ul>
+
+<h3>
+<a id="the-source-data" class="anchor" href="#the-source-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>The source data</h3>
+
+<p>1300 XML files, part of the data for the searchable online resource at <a href="http://www.londonlives.org">www.londonlives.org</a> (v1.1, released April 2012). These files represent four record series held at the London Metropolitan Archives: the Sessions Papers for the City of London (SL), Middlesex (SM), Westminster (WJ) and the Old Bailey (OB) (the latter contains only a tiny handful of petitions).</p>
+
+<p>The material in London Lives was transcribed using a method known as <a href="http://www.londonlives.org/static/Project.jsp#toc9">double rekeying</a>, in which two (non-academic) typists transcribe text, the two versions are compared and only where they differ does any further manual checking take place. It is not as accurate as traditional academic standards of transcription and proofreading, but unfortunately that is not a practical option for transcription of such large amounts of text. The accuracy rate for London Lives is approximately 98-99% (at character level), but it can vary considerably between documents.</p>
+
+<p>The rekeyed texts were then marked up for searching, using a combination of automated and manual tagging, for various types of information: the names of people and places, occupations and dates. There is also structural markup for features such as text in margins, deleted, obscured or illegible text, text continuing across page breaks, and so on. </p>
+
+<p>The markup did not, however, include information about document structures and types, beyond general document categorisations such as 'Sessions Papers' or 'Accounts Books' which were based essentially on the original document series' archival organisation. There is no real structuring information between this type of generic classification and the single page. This is quite problematic in the Sessions Papers because they are both much more varied and much larger than the other documents in the resource (many of which are bound volumes rather than loose papers). Thus, simply finding the petitions was the project's first challenge.</p>
+
+<h3>
+<a id="data-collection" class="anchor" href="#data-collection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data collection</h3>
+
+<p>There are far too many pages of material in the Sessions Papers for me 
+to identify petitions manually, and so I employed a number of
+semi-automated search strategies. The likely result of this is that I
+have not found every petition in the original data, and there may be a
+few documents that are not petitions at all. Moreover, there is a degree of bias built in to the method, in favour of certain kinds of documents, which users of the data should be aware of.</p>
+
+<p>The main strategy for identifying likely petitions was based on
+searching for certain keywords and phrases. In particular:</p>
+
+<ol>
+<li> The preamble: "To The Right Honourable/Worshipful/similar title..."</li>
+<li> Less formal letters often begin with phrases like 'May it please you/your honour'</li>
+<li> At the beginning of the document or immediately following the preamble: "The humble petition/prayer of..."</li>
+<li> In the body of the document: "your (humble) petitioner(s)" (also "humbly sheweth")</li>
+<li> The sign off: "And your petitioner(s) (as in duty bound) shall ever pray etc"</li>
+</ol>
+
+<p>The list above presents the phrases in standard modern English. But in
+reality the forms of the words in the data files can vary considerably, making them much harder to find:</p>
+
+<ol>
+<li> spelling variations and the use of abbreviations in the original
+documents</li>
+<li> damage to the original documents which has obscured parts of the
+text</li>
+<li> rekeying errors </li>
+</ol>
+
+<p>This necessitated the use of some complex <a href="http://www.regular-expressions.info/">regular expressions</a> searches. For
+example, a search query for 'The humble petition of' would in fact look like <code>(th|y)e.? humb(le|ell?) peti(t|c)i?on of</code></p>
+
+<h3>
+<a id="issues-and-limitations" class="anchor" href="#issues-and-limitations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Issues and limitations</h3>
+
+<p>I initially underestimated how many pages that were not in fact
+petitions might also contain some of the same phrases (particularly, for
+example, in orders relating to petitions). I had to cull around 300
+items from my original results list and there may still be a few stray
+non-petitions (although it's highly likely that they will be closely
+related material). But the few remaining false positives are less problematic than the documents that these searches might have <em>missed</em>.</p>
+
+<p>The method is biased, obviously, towards documents that contain those
+phrases. It is most effective for finding
+professionally-produced petitions that adhere closely to the formal conventions
+of petitioning language and use consistent spelling. Non-professional petitions from individuals of lower social status are more likely to </p>
+
+<ul>
+<li>depart to some extent from those forms</li>
+<li>use unpredictable and inconsistent spelling</li>
+<li>have less well-formed handwriting (which in turn made them harder to rekey accurately) </li>
+</ul>
+
+<p>I think I have now found the vast
+majority of petitions. However, I am much less certain about the search for petitioning letters. In both cases, though, future additions are likely.</p>
+
+<h3>
+<a id="keyword-tagging" class="anchor" href="#keyword-tagging" aria-hidden="true"><span class="octicon octicon-link"></span></a>Keyword tagging</h3>
+
+<p>The keyword tagging should be regarded with considerable caution, merely as rough indicators of likely content and/or petitioner types. In most cases a tag simply means the petition refers to that subject but . Eg, the tag 'apprentice' may mean the petition was on behalf of an apprentice or simply that it mentions one. </p>
+
+<p>Moreover, some of the tagging is probably unhelpful or simply wrong, and much of it is inconsistent (it should not be assumed that the existence of a tag means I have indentified all petitions that could have that tag). Additionally, I have focused on keywords that are of interest to me; so, for example, crime-related keywords are over-represented. </p>
+
+<p>I would emphasise that the tagging is <strong>not</strong> reliable enough to use in any statistical analysis. </p>
+
+<p>I felt that <em>some</em> kind of tagging would be better than nothing, but future updates can be expected to improve significantly on this aspect of the data.</p>
+
+<h3>
+<a id="considerations-for-further-analysis" class="anchor" href="#considerations-for-further-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Considerations for further analysis</h3>
+
+<p>All of the issues described need to be taken into account for anyone trying to use the data. I have created a 'corpus' of plain text files but I do not yet know exactly what it will be possible to do with them, given the two compounding factors of transcription errors and spelling variations in the original documents. Corpus linguistic approaches to early modern <em>printed</em> texts - which are considerably more standardised than these non-elite manuscript sources - have to work hard to deal with <a href="http://www.linguisticdna.org/2015/07/10/eebo-tcp-and-standard-spelling/">their orthographic variations</a>. The petitions texts might be more comparable to OCRed printed texts (such as ECCO) than to the rekeyed EEBO-TCP corpus.</p>
+
+<p>To give one brief example: the top 10 variants from a search of the Middlesex Sessions petitions texts for the word "relief", using the regex <code>rel[ie]+f</code>:</p>
+
+<table>
+<thead>
+<tr>
+<th>word</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>relief</td>
+<td>1100</td>
+</tr>
+<tr>
+<td>releife</td>
+<td>536</td>
+</tr>
+<tr>
+<td>releif</td>
+<td>171</td>
+</tr>
+<tr>
+<td>reliefe</td>
+<td>101</td>
+</tr>
+<tr>
+<td>relife</td>
+<td>20</td>
+</tr>
+<tr>
+<td>releiffe</td>
+<td>8</td>
+</tr>
+<tr>
+<td>releifed</td>
+<td>4</td>
+</tr>
+<tr>
+<td>reliefs</td>
+<td>4</td>
+</tr>
+<tr>
+<td>releiff</td>
+<td>3</td>
+</tr>
+<tr>
+<td>releift</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+
+<p>Rekeying errors are frequently hard to distinguish from spelling variations without closer examination of the text. For example, the word 'agoe' ('ago') has been rekeyed on a number of occasions as 'aged'. In the 'relief' example above, 'relieft' <em>could</em> be an unusual spelling of 'relieved' - or simply a random rekeying error.</p>
+
+<p>However, at the very least the fact that the petitions exist as a corpus makes it possible to explore just how 'bad' the data is, whether it is possible to distinguishing spelling variation from transcription error, and potentially improve the text in the future.</p>
+
+<h2>
+<a id="data-summary" class="anchor" href="#data-summary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data summary</h2>
+
+<p>Please read the <em>methods and caveats</em> section carefully before using the data! </p>
+
+<h3>
+<a id="texts" class="anchor" href="#texts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Texts</h3>
+
+<p><strong>10130 plain text files</strong>: one .txt file for each petition, in subfolders organised by court. (13.5mb)</p>
+
+<p>File naming: the name of each file corresponds to the image reference on London Lives and to the ll_img field in each of the metadata tables.</p>
+
+<p>The text files are intended primarily to enable textmining (bearing in mind all the problems already discussed) or import into a database for advanced searching. </p>
+
+<p>Nearly all of the London Lives
+XML markup has been removed for this version of the files, but certain markup elements are still indicated:</p>
+
+<ul>
+<li>  paragraph breaks have been retained</li>
+<li>  markup for obscured or illegible text has been replaced with [...]</li>
+<li>  deleted text (between &lt;deleted&gt; tags) has been replaced with [---]</li>
+<li>  the &lt;mark&gt; tag, denoting that someone signed a document with a mark, has been replaced with [x] </li>
+</ul>
+
+<h3>
+<a id="metadata" class="anchor" href="#metadata" aria-hidden="true"><span class="octicon octicon-link"></span></a>Metadata</h3>
+
+<p>The data tables are supplied in .csv format.</p>
+
+<h4>
+<a id="ll_petitions_v1_data" class="anchor" href="#ll_petitions_v1_data" aria-hidden="true"><span class="octicon octicon-link"></span></a>LL_petitions_v1_data</h4>
+
+<p>Contains summary information for each petition, including tags and data to enable linking to the petitions on London Lives. A minority of petitions covered multiple pages and this is also indicated.</p>
+
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pid</td>
+<td>table ID</td>
+</tr>
+<tr>
+<td>ll_img</td>
+<td>London Lives (first) image reference</td>
+</tr>
+<tr>
+<td>ll_url</td>
+<td>London Lives URL for the (first) page</td>
+</tr>
+<tr>
+<td>mpage</td>
+<td>0 = a single page petition; 1 = multiple pages</td>
+</tr>
+<tr>
+<td>mpimgs</td>
+<td>list of all image references for multiple page petitions</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>list of tags for the petition</td>
+</tr>
+<tr>
+<td>court</td>
+<td>two letter court code</td>
+</tr>
+<tr>
+<td>year</td>
+<td>year of session</td>
+</tr>
+</tbody>
+</table>
+
+<h4>
+<a id="ll_petitions_v1_tags" class="anchor" href="#ll_petitions_v1_tags" aria-hidden="true"><span class="octicon octicon-link"></span></a>LL_petitions_v1_tags</h4>
+
+<p>This file provides the tags data separately for use in a database. </p>
+
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tid</td>
+<td>table ID</td>
+</tr>
+<tr>
+<td>ll_img</td>
+<td>(first) image reference</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>tag name</td>
+</tr>
+</tbody>
+</table>
+
+<p>Most of the tag names should be self-explanatory, so I am not documenting them all here. But note the following:</p>
+
+<ul>
+<li>
+<strong>churchwardens_petition</strong> - petitions <em>by</em> churchwardens and overseers of the poor on behalf of their parishes, usually concerning disputed settlement cases. </li>
+<li>
+<strong>churchwardens_overseers</strong> - unsorted mentions of churchwardens/overseers of the poor; some will probably end up in the churchwardens_petition category</li>
+<li>
+<strong>is_poor</strong> - petitions from people who cite their poverty as a reason for their petition. </li>
+<li>
+<strong>poor</strong> - unsorted references to the poor/poverty (again, some of these should probably be in is_poor)</li>
+<li>
+<strong>disability</strong> - another work in progress, and does not distinguish physical incapacity caused by old age from other impairments. It includes both physical and mental disabilities.</li>
+<li>
+<strong>office</strong> -  usually petitions by office holders (concerning expenses, attempts to avoid obligations or to explain negligence, etc); covers a wide range of offices (eg gaolers, constables, scavengers, and also jurymen)</li>
+</ul>
+
+<h2>
+<a id="acknowledgments" class="anchor" href="#acknowledgments" aria-hidden="true"><span class="octicon octicon-link"></span></a>Acknowledgments</h2>
+
+<p>The dataset has been created using the transcriptions of the Sessions Papers published at London Lives. I am deeply grateful to Tim Hitchcock and Bob Shoemaker, the London Lives project directors, for agreeing to share the data.</p>
+
+<p>The original documents are held at the London Metropolitan Archives.</p>
+
+<p>The London Lives project (under the name Plebeian Lives) was funded by the Economic and Social Research Council.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>The dataset and all accompanying documentation are licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+
+<p>This means that you are free to copy and redistribute the material in any medium or format; and to remix, transform, and build upon the material for any purpose, even commercially, providing you follow the terms of the licence:</p>
+
+<ul>
+<li>   You must give appropriate credit, provide a link to the license, and indicate if changes were made.</li>
+<li>   If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</li>
+</ul>
+
+<h2>
+<a id="citation" class="anchor" href="#citation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Citation</h2>
+
+<p>Suggested citation:</p>
+
+<p>Sharon Howard, The London Lives Petitions Project, version 1.0 (2015), based on data from <em><a href="http://www.londonlives.org">www.londonlives.org</a></em>.</p>
+
+<h2>
+<a id="future-plans" class="anchor" href="#future-plans" aria-hidden="true"><span class="octicon octicon-link"></span></a>Future plans</h2>
+
+<ul>
+<li>Identify and add missing petitions and letters.</li>
+<li>Better subject tagging.</li>
+<li>TEI-XML files, incorporating some subset of the London Lives structural and semantic markup.</li>
+<li>A web search at earlymodernweb.org, linking directly to the documents on the London Lives website.</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/sharonhoward">sharonhoward</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
