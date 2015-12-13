@@ -151,7 +151,7 @@ searching for certain keywords and phrases. In particular:</p>
 
 <ol>
 <li> The preamble: "To The Right Honourable/Worshipful/similar title..."</li>
-<li> Less formal letters often begin with phrases like 'May it please you/your honour'</li>
+<li> Less formal letters often begin with phrases like 'Honoured Sir/Sir,'</li>
 <li> At the beginning of the document or immediately following the preamble: "The humble petition/prayer of..."</li>
 <li> In the body of the document: "your (humble) petitioner(s)" (also "humbly sheweth")</li>
 <li> The sign off: "And your petitioner(s) (as in duty bound) shall ever pray etc"</li>
@@ -169,7 +169,7 @@ text</li>
 </ol>
 
 <p>This necessitated the use of some complex <a href="http://www.regular-expressions.info/">regular expressions</a> searches. For
-example, a search query for 'The humble petition of' would in fact look like <code>(th|y)e.? humb(le|ell?) peti(t|c)i?on of</code></p>
+example, a search query for 'The humble petition of' could in fact look like <code>(th|y)e.? humb(le|ell?) peti(t|c)i?on of</code></p>
 
 <h3>
 <a id="issues-and-limitations" class="anchor" href="#issues-and-limitations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Issues and limitations</h3>
@@ -276,7 +276,9 @@ majority of petitions. However, I am much less certain about the search for peti
 <h3>
 <a id="texts" class="anchor" href="#texts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Texts</h3>
 
-<p><strong>10130 plain text files</strong>: one .txt file for each petition, in subfolders organised by court. (13.5mb)</p>
+<p>The current version is 1.1 (released December 2015), a small update to add some newly-found petitions and letters, and remove some documents that were either not petitions or were mere fragments. </p>
+
+<p><strong>10187 plain text files</strong>: one .txt file for each petition, in subfolders organised by court. (c.13.5mb)</p>
 
 <p>File naming: the name of each file corresponds to the image reference on London Lives and to the ll_img field in each of the metadata tables.</p>
 
@@ -298,7 +300,7 @@ XML markup has been removed for this version of the files, but certain markup el
 <p>The data tables are supplied in .csv format.</p>
 
 <h4>
-<a id="ll_petitions_v1_data" class="anchor" href="#ll_petitions_v1_data" aria-hidden="true"><span class="octicon octicon-link"></span></a>LL_petitions_v1_data</h4>
+<a id="ll_petitions_v1_data" class="anchor" href="#ll_petitions_v1_data" aria-hidden="true"><span class="octicon octicon-link"></span></a>LL_petitions_v1-1_data</h4>
 
 <p>Contains summary information for each petition, including tags and data to enable linking to the petitions on London Lives. A minority of petitions covered multiple pages and this is also indicated.</p>
 
@@ -346,7 +348,7 @@ XML markup has been removed for this version of the files, but certain markup el
 </table>
 
 <h4>
-<a id="ll_petitions_v1_tags" class="anchor" href="#ll_petitions_v1_tags" aria-hidden="true"><span class="octicon octicon-link"></span></a>LL_petitions_v1_tags</h4>
+<a id="ll_petitions_v1_tags" class="anchor" href="#ll_petitions_v1_tags" aria-hidden="true"><span class="octicon octicon-link"></span></a>LL_petitions_v1-1_tags</h4>
 
 <p>This file provides the tags data separately for use in a database. </p>
 
