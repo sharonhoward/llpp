@@ -97,7 +97,7 @@ The material in London Lives was transcribed using a method known as [double rek
 
 The rekeyed texts were then marked up for searching, using a combination of automated and manual tagging, for various types of information: the names of people and places, occupations and dates. There is also structural markup for features such as text in margins, deleted, obscured or illegible text, text continuing across page breaks, and so on. 
 
-The markup did not, however, include information about document structures and types, beyond general document categorisations such as 'Sessions Papers' or 'Accounts Books' which were based essentially on the original document series' archival organisation. There is no real structuring information between this type of generic classification and the single page. This is quite problematic in the Sessions Papers because they are both much more varied and much larger than the other documents in the resource (many of which are bound volumes rather than loose papers). Thus, simply finding the petitions was the project's first challenge.
+The markup did not, however, include information about document structures and types. General file categorisation such as 'Sessions Papers' or 'Accounts Books' was based on the original document series' archival organisation. There is no real structuring information between this type of generic classification and the single page. This is quite problematic in the Sessions Papers because they are both much more varied and much larger than the other documents in the resource (many of which are bound volumes rather than loose papers). Thus, simply finding the petitions was the project's first challenge.
 
 ### Data collection
 
@@ -111,9 +111,9 @@ The main strategy for identifying likely petitions was based on
 searching for certain keywords and phrases. In particular:
 
 1.  The preamble: "To The Right Honourable/Worshipful/similar title..."
-2.  Less formal letters often begin with phrases like 'May it please you/your honour'
-3.  At the beginning of the document or immediately following the preamble: "The humble petition/prayer of..."
-4.  In the body of the document: "your (humble) petitioner(s)" (also "humbly sheweth")
+2.  Less formal letters begin with phrases like 'Honoured Sir/Sir,'
+3.  At the beginning of the document or immediately following the preamble: "The humble petition/prayer/appeal of..."
+4.  In the body of the document: "your (humble) petitioner(s)" (also "humbly sheweth"; "May it please you/your honour")
 5.  The sign off: "And your petitioner(s) (as in duty bound) shall ever pray etc"
 
 The list above presents the phrases in standard modern English. But in
@@ -126,7 +126,7 @@ reality the forms of the words in the data files can vary considerably, making t
 3.  rekeying errors 
 
 This necessitated the use of some complex [regular expressions](http://www.regular-expressions.info/) searches. For
-example, a search query for 'The humble petition of' would in fact look like `(th|y)e.? humb(le|ell?) peti(t|c)i?on of`
+example, a search query for 'The humble petition of' could in fact look like `(th|y)e.? humb(le|ell?) peti(t|c)i?on of`
 
 
 ### Issues and limitations
@@ -148,7 +148,7 @@ of petitioning language and use consistent spelling. Non-professional petitions 
 - have less well-formed handwriting (which in turn made them harder to rekey accurately) 
 
 I think I have now found the vast
-majority of petitions. However, I am much less certain about the search for petitioning letters. In both cases, though, future additions are likely.
+majority of petitions and petitioning letters. In both cases, though, future additions are possible.
 
 
 ### Keyword tagging
@@ -157,7 +157,7 @@ The keyword tagging should be regarded with considerable caution, merely as roug
 
 Moreover, some of the tagging is probably unhelpful or simply wrong, and much of it is inconsistent (it should not be assumed that the existence of a tag means I have indentified all petitions that could have that tag). Additionally, I have focused on keywords that are of interest to me; so, for example, crime-related keywords are over-represented. 
 
-I would emphasise that the tagging is **not** reliable enough to use in any statistical analysis. 
+I would emphasise that the tagging is **not** reliable enough to use as the basis for statistical analysis. 
 
 I felt that *some* kind of tagging would be better than nothing, but future updates can be expected to improve significantly on this aspect of the data.
 
@@ -192,10 +192,11 @@ Data summary
 
 Please read the *methods and caveats* section carefully before using the data! 
 
+The current version is 1.1 (released December 2015), a small update to add some newly-found petitions and letters, and remove some documents that were either not petitions or were mere fragments. 
 
 ### Texts
 
-**10130 plain text files**: one .txt file for each petition, in subfolders organised by court. (13.5mb)
+**10187 plain text files**: one .txt file for each petition, in subfolders organised by court. (c.13.5mb)
 
 File naming: the name of each file corresponds to the image reference on London Lives and to the ll_img field in each of the metadata tables.
 
@@ -213,7 +214,7 @@ XML markup has been removed for this version of the files, but certain markup el
 
 The data tables are supplied in .csv format.
 
-#### LL_petitions_v1_data
+#### LL_petitions_v1-1_data
 
 Contains summary information for each petition, including tags and data to enable linking to the petitions on London Lives. A minority of petitions covered multiple pages and this is also indicated.
 
@@ -229,7 +230,7 @@ Contains summary information for each petition, including tags and data to enabl
 | year | year of session |
 
 
-#### LL_petitions_v1_tags
+#### LL_petitions_v1-1_tags
 
 This file provides the tags data separately for use in a database. 
 
@@ -258,7 +259,7 @@ The dataset has been created using the transcriptions of the Sessions Papers pub
 
 The original documents are held at the London Metropolitan Archives.
 
-The London Lives project (under the name Plebeian Lives) was funded by the Economic and Social Research Council.
+The London Lives project (under the name Plebeian Lives) was funded by the Economic and Social Research Council between 2006-2010.
 
 License
 ---------
@@ -282,9 +283,9 @@ Sharon Howard, The London Lives Petitions Project, version 1.0 (2015), based on 
 Future plans
 -------------
 
-* Identify and add missing petitions and letters.
 * Better subject tagging.
 * TEI-XML files, incorporating some subset of the London Lives structural and semantic markup.
 * A web search at earlymodernweb.org, linking directly to the documents on the London Lives website.
+* Identify and add missing petitions and letters.
 
 [![DOI](https://zenodo.org/badge/8207/sharonhoward/llpp.svg)](https://zenodo.org/badge/latestdoi/8207/sharonhoward/llpp)
