@@ -196,7 +196,7 @@ The current version is 1.1 (released December 2015), a small update to add some 
 
 ### Texts
 
-**10187 plain text files**: one .txt file for each petition, in subfolders organised by court. (c.13.5mb)
+**10187 plain text files**: one .txt file for each petition, in subfolders organised by court. 
 
 File naming: the name of each file corresponds to the image reference on London Lives and to the ll_img field in each of the metadata tables.
 
