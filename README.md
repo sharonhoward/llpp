@@ -134,11 +134,11 @@ example, a search query for 'The humble petition of' could in fact look like `(t
 I initially underestimated how many pages that were not in fact
 petitions might also contain some of the same phrases (particularly, for
 example, in orders relating to petitions). I had to cull around 300
-items from my original results list and there may still be a few stray
-non-petitions (although it's highly likely that they will be closely
-related material). But the few remaining false positives are less problematic than the documents that these searches might have *missed*.
+items from my original results list and subsequently found further 
+non-petitions (although they are often closely
+related material - orders or notes relating to decisions, for example). But the few remaining false positives might be less problematic than the documents that these searches might have *missed*.
 
-The method is biased, obviously, towards documents that contain those
+The method is biased, obviously, towards documents that contain the selected
 phrases. It is most effective for finding
 professionally-produced petitions that adhere closely to the formal conventions
 of petitioning language and use consistent spelling. Non-professional petitions from individuals of lower social status are more likely to 
@@ -157,7 +157,7 @@ The keyword tagging should be regarded with considerable caution, merely as roug
 
 Moreover, some of the tagging is probably unhelpful or simply wrong, and much of it is inconsistent (it should not be assumed that the existence of a tag means I have indentified all petitions that could have that tag). Additionally, I have focused on keywords that are of interest to me; so, for example, crime-related keywords are over-represented. 
 
-I would emphasise that the tagging is **not** reliable enough to use as the basis for statistical analysis. 
+I would emphasise that the tagging is not reliable enough to use as the basis for statistical analysis. 
 
 I felt that *some* kind of tagging would be better than nothing, but future updates can be expected to improve significantly on this aspect of the data.
 
@@ -192,11 +192,11 @@ Data summary
 
 Please read the *methods and caveats* section carefully before using the data! 
 
-The current version is 1.1 (released December 2015), a small update to add some newly-found petitions and letters, and remove some documents that were either not petitions or were mere fragments. 
+The current version is 1.2 (released January 2016). This update has  removed about 140 items that turned out on closer inspection not to be petitions, or to be too fragmentary to be useful; it also includes corrections relating to multiple page petitions (either adding previously omitted pages or removing erroneous ones). 
 
 ### Texts
 
-**10187 plain text files**: one .txt file for each petition, in subfolders organised by court. 
+**10045 plain text files**: one .txt file for each petition, in subfolders organised by court. 
 
 File naming: the name of each file corresponds to the image reference on London Lives and to the ll_img field in each of the metadata tables.
 
@@ -255,7 +255,7 @@ Most of the tag names should be self-explanatory, so I am not documenting them a
 Acknowledgments
 ---------------------
 
-The dataset has been created using the transcriptions of the Sessions Papers published at London Lives. I am deeply grateful to Tim Hitchcock and Bob Shoemaker, the London Lives project directors, for agreeing to share the data.
+The dataset has been created using the transcriptions of the Sessions Papers published at London Lives. I am deeply grateful to Tim Hitchcock and Bob Shoemaker, the London Lives project directors, for willingly agreeing to share the data.
 
 The original documents are held at the London Metropolitan Archives.
 
@@ -277,7 +277,7 @@ Citation
 
 Suggested citation:
 
-Sharon Howard, The London Lives Petitions Project, version 1.0 (2015), based on data from *www.londonlives.org*.
+Sharon Howard, The London Lives Petitions Project, version 1.2 (2016), based on data from *www.londonlives.org*.
 
 
 Future plans
