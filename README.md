@@ -71,11 +71,11 @@ abusive behaviour by neighbours, employers, apprentices, husbands or
 local officials; by parishes to appeal official decisions about paupers and
 vagrants; to claim exemptions from local office or taxes; and more.  Individuals also wrote less formal letters to officials similarly requesting some kind of relief, aid or mitigation, and this project attempts to gather those documents as well as 'proper' petitions, for a fuller picture of the culture and practices of petitioning. (Additionally, there are related documents for many petitions, particularly court orders, which I have not attempted to document at this stage.)
 
-The London Lives Sessions Papers contain at least 10,000 petitions and petitioning letters addressed to London magistrates (and a few to the judges of the Old Bailey). The sheer scale and heterogeneity of the Sessions
+The London Lives Sessions Papers contain approximately 10,000 petitions and petitioning letters addressed to London magistrates (and a few to the judges of the Old Bailey). The sheer scale and heterogeneity of the Sessions
 Papers, especially the Middlesex Sessions, and the organisation (or lack of it) of the
 material in London Lives means that they have not been easily accessible
 as a body of texts for in-depth and systematic investigation of their
-language and their creators. I have begun the London Lives Petitions Project as an attempt to remedy this.
+language and their creators. The London Lives Petitions Project is intended to remedy this.
 
 
 
@@ -108,7 +108,7 @@ have not found every petition in the original data, and there may be a
 few documents that are not petitions at all. Moreover, there is a degree of bias built in to the method, in favour of certain kinds of documents, which users of the data should be aware of.
 
 The main strategy for identifying likely petitions was based on
-searching for certain keywords and phrases. In particular:
+searching for certain keywords and phrases. The following are common features of petitions:
 
 1.  The preamble: "To The Right Honourable/Worshipful/similar title..."
 2.  Less formal letters begin with phrases like 'Honoured Sir/Sir,'
@@ -126,7 +126,7 @@ reality the forms of the words in the data files can vary considerably, making t
 3.  rekeying errors 
 
 This necessitated the use of some complex [regular expressions](http://www.regular-expressions.info/) searches. For
-example, a search query for 'The humble petition of' could in fact look like `(th|y)e.? humb(le|ell?) peti(t|c)i?on of`
+example, a search query for 'The humble petition of' could look like `(th|y)e.? humb(le|ell?) peti(t|c)i?on of`
 
 
 ### Issues and limitations
@@ -192,7 +192,7 @@ Data summary
 
 Please read the *methods and caveats* section carefully before using the data! 
 
-The current version is 1.2 (released January 2016). This update has  removed about 140 items that turned out on closer inspection not to be petitions, or to be too fragmentary to be useful; it also includes corrections relating to multiple page petitions (either adding previously omitted pages or removing erroneous ones). 
+The current version is 2.0 (released October 2016). This update adds data about petitioners, and slightly improves tagging related to parish petitions. 
 
 ### Texts
 
@@ -214,23 +214,24 @@ XML markup has been removed for this version of the files, but certain markup el
 
 The data tables are supplied in .csv format.
 
-#### LL_petitions_v1-1_data
+#### LL_petitions_data_v2-0.csv
 
 Contains summary information for each petition, including tags and data to enable linking to the petitions on London Lives. A minority of petitions covered multiple pages and this is also indicated.
 
 | field | description |
 |------|--------------|
-| pid | table ID |
+| pid | table unique ID |
 | ll_img | London Lives (first) image reference |
 | ll_url | London Lives URL for the (first) page |
 | mpage | 0 = a single page petition; 1 = multiple pages |
 | mpimgs | list of all image references for multiple page petitions |
 | tags | list of tags for the petition |
-| court | two letter court code |
 | year | year of session |
+| court | two letter court code |
+| petitioners | list of identified petitioners |
 
 
-#### LL_petitions_v1-1_tags
+#### LL_petitions_tags_v2-0.csv
 
 This file provides the tags data separately for use in a database. 
 
@@ -239,6 +240,8 @@ This file provides the tags data separately for use in a database.
 | tid | table ID |
 | ll_img | (first) image reference |
 | tag | tag name |
+
+The ll_img field can be used to link to the LL_petitions_data table above.
 
 Most of the tag names should be self-explanatory, so I am not documenting them all here. But note the following:
 
@@ -249,7 +252,22 @@ Most of the tag names should be self-explanatory, so I am not documenting them a
 * **disability** - another work in progress, and does not distinguish physical incapacity caused by old age from other impairments. It includes both physical and mental disabilities.
 * **office** -  usually petitions by office holders (concerning expenses, attempts to avoid obligations or to explain negligence, etc); covers a wide range of offices (eg gaolers, constables, scavengers, and also jurymen)
 
+#### LL_petitions_petitioners_v2-0.csv
 
+This file provides petitioners data, including gender, separately (primarily for use in a database).
+
+| field | description |
+|------|------------------|
+| nuid | table unique ID |
+| ll_name_id | London Lives name ID |
+| ll_img | (first) image reference |
+| given | first name(s) |
+| surname | last name(s) |
+| gender | gender |
+
+The ll_img field can be used to link to the LL_petitions_data table.
+
+This data is derived from the London Lives name tagging, which may contain errors or be incomplete. The assignment of gender was basedr primarily on given names; there are a few names (Frances/Francis, Christian) which can be ambiguous; these have not yet been manually checked.
 
 
 Acknowledgments
@@ -277,7 +295,7 @@ Citation
 
 Suggested citation:
 
-Sharon Howard, The London Lives Petitions Project, version 1.2 (2016), based on data from *www.londonlives.org*.
+Sharon Howard, The London Lives Petitions Project, version 2.0 (2016), based on data from *www.londonlives.org*.
 
 
 Future plans
