@@ -306,4 +306,4 @@ Future plans
 * A web search at earlymodernweb.org, linking directly to the documents on the London Lives website.
 * Identify and add missing petitions and letters.
 
-[![DOI](https://zenodo.org/badge/8207/sharonhoward/llpp.svg)](https://zenodo.org/badge/latestdoi/8207/sharonhoward/llpp)
+[![DOI](https://zenodo.org/badge/46944101.svg)](https://zenodo.org/badge/latestdoi/46944101)
