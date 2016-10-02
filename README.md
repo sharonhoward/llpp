@@ -237,7 +237,7 @@ This file provides the tags data separately for use in a database.
 
 | field | description |
 |------|------------------|
-| tid | table ID |
+| tuid | table ID |
 | ll_img | (first) image reference |
 | tag | tag name |
 
